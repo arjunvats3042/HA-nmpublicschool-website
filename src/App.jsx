@@ -10,19 +10,51 @@ import result from "./assets/result.png";
 import InfiniteScrollCards from "./components/InfiniteScrollCards";
 import FacilitiesSection from "./components/Facilities";
 import NewsAndEventsSection from "./components/NewsAndEvents";
-import { ScrollProgress } from "./components/magicui/scroll-progress";
+import {ScrollProgress} from "./components/magicui/scroll-progress";
+import {Gallery} from "./components/Gallery";
+import g1 from "./assets/g1.jpg";
+import g2 from "./assets/g2.jpg";
+import g3 from "./assets/g3.jpg";
+import g4 from "./assets/g4.jpg";
+import g5 from "./assets/g5.jpg";
+import g6 from "./assets/g6.jpg";
+
+const photos = [
+  {
+    src: g1,
+    text: "Kicking off Fit India Week with a vibrant announcement on our classroom board!",
+  },
+  {
+    src: g2,
+    text: "Students groove to the rhythm, celebrating fitness through dance during Fit India Week!",
+  },
+  {
+    src: g3,
+    text: "Our teacher inspires us to stay active and healthy during Fit India Week!",
+  },
+  {
+    src: g4,
+    text: "A delicious spread of nutritious food to celebrate healthy eating habits!",
+  },
+  {
+    src: g5,
+    text: "Embracing the outdoors with fun fitness challenges on the school ground!",
+  },
+  {
+    src: g6,
+    text: "Stretching and moving together—promoting a fit and active lifestyle!",
+  },
+];
 
 function App() {
-
   return (
     <>
       <Header />
-
       <div>
         <ScrollProgress className="top-[65px]" />
         <HeroSection />
         <div className="bg-[#F3F6FB]">
-          <h2 className="text-3xl md:text-4xl font-bold text-center  pt-8 text-gray-800">
+          <h2 className="text-3xl md:text-4xl font-bold text-center pt-8 text-gray-800">
             Words That Inspire Us
           </h2>
           <InfiniteScrollCards />
@@ -35,6 +67,12 @@ function App() {
         </div>
         <FacilitiesSection />
         <NewsAndEventsSection />
+        <div className="flex flex-col">
+          <h1 className="text-3xl md:text-4xl font-bold text-center pt-8 text-gray-800">
+            Gallery
+          </h1>
+          <Gallery testimonials={photos} autoplay={true} />
+        </div>
       </div>
       <Footer />
     </>

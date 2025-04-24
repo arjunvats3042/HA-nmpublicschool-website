@@ -105,7 +105,7 @@ const Footer = () => {
 
       {/* Bottom Copyright */}
       <div className="border-t border-white/30 mt-12 pt-6 text-center text-xs opacity-75">
-        © {new Date().getFullYear()} Your School Name. All rights reserved.
+        © {new Date().getFullYear()} *****. All rights reserved.
       </div>
     </footer>
   );

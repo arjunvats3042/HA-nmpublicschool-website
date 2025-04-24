@@ -12,12 +12,16 @@ import FacilitiesSection from "./components/Facilities";
 import NewsAndEventsSection from "./components/NewsAndEvents";
 import {ScrollProgress} from "./components/magicui/scroll-progress";
 import {Gallery} from "./components/Gallery";
+import SchoolBuilding from "./infrastructure/SchoolBuilding";
+import DigitalClassrooms from "./infrastructure/DigitalClassrooms";
 import g1 from "./assets/g1.jpg";
 import g2 from "./assets/g2.jpg";
 import g3 from "./assets/g3.jpg";
 import g4 from "./assets/g4.jpg";
 import g5 from "./assets/g5.jpg";
 import g6 from "./assets/g6.jpg";
+import Laboratories from "./infrastructure/Laboratories";
+import GamesAndSports from "./infrastructure/GamesandSports";
 
 const photos = [
   {
@@ -73,6 +77,7 @@ function App() {
           </h1>
           <Gallery testimonials={photos} autoplay={true} />
         </div>
+        
       </div>
       <Footer />
     </>

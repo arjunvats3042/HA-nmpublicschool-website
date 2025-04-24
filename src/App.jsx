@@ -8,6 +8,8 @@ import teacher from "./assets/teacher.png";
 import form from "./assets/form.png";
 import result from "./assets/result.png";
 import InfiniteScrollCards from "./components/InfiniteScrollCards";
+import FacilitiesSection from "./components/Facilities";
+import NewsAndEventsSection from "./components/NewsAndEvents";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Mycard imageSrc={form} buttonLabel="Registration Form" />
           <Mycard imageSrc={result} buttonLabel="Result" />
         </div>
+        <FacilitiesSection />
+        <NewsAndEventsSection />
       </div>
       <Footer />
     </>

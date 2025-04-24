@@ -18,6 +18,12 @@ import g3 from "./assets/g3.jpg";
 import g4 from "./assets/g4.jpg";
 import g5 from "./assets/g5.jpg";
 import g6 from "./assets/g6.jpg";
+import AboutSchool from "./AboutUs/AboutSchool";
+import OurVision from "./AboutUs/OurVision";
+import PrincipalMessage from "./AboutUs/Principal'sMessage";
+import ChairmanMessage from "./AboutUs/Chairman'sMessage";
+import AimandObjective from "./AboutUs/Aim&Objectives";
+
 
 const photos = [
   {
@@ -73,6 +79,11 @@ function App() {
           </h1>
           <Gallery testimonials={photos} autoplay={true} />
         </div>
+        <AboutSchool />
+        <OurVision />
+        <PrincipalMessage />
+        <ChairmanMessage />
+        <AimandObjective />
       </div>
       <Footer />
     </>

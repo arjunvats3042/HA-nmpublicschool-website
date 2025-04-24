@@ -10,14 +10,18 @@ import result from "./assets/result.png";
 import InfiniteScrollCards from "./components/InfiniteScrollCards";
 import FacilitiesSection from "./components/Facilities";
 import NewsAndEventsSection from "./components/NewsAndEvents";
+import { ScrollProgress } from "./components/magicui/scroll-progress";
 
 function App() {
+
   return (
     <>
       <Header />
+
       <div>
+        <ScrollProgress className="top-[65px]" />
         <HeroSection />
-        <div className="bg-gray-300">
+        <div className="bg-[#F3F6FB]">
           <h2 className="text-3xl md:text-4xl font-bold text-center  pt-8 text-gray-800">
             Words That Inspire Us
           </h2>

@@ -3,15 +3,15 @@ import { Newspaper, Calendar } from 'lucide-react';
 
 const NewsAndEvents = () => {
   const newsItems = [
-    "Our news ticker is on coffee break. Check back shortly!",
+    "Latest news will be updated here...",
   ];
 
   const eventItems = [
-    "Nothing scheduled yet—our hall monitor is still yawning.",
+    "Upcoming events will be updated here...",
   ];
 
   return (
-    <section className="bg-[#F3F6FB] py-6 pb-12 px-6">
+    <section className=" py-6 pb-12 px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-[#1F386B] text-center mb-12">
           News &amp; Events

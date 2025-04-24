@@ -77,7 +77,7 @@ export const ProductItem = ({title, href}) => (
 );
 
 export const HoveredLink = ({children, ...rest}) => (
-  <div className="px-4 py-2">
+  <div className="flex items-center px-4 ">
     <a
       {...rest}
       className="text-gray-800 hover:text-blue-600 transition-transform duration-200 hover:scale-105 font-medium"
@@ -150,9 +150,9 @@ const Header = () => {
 
   return (
     <nav className="bg-white text-gray-800 sticky top-0 z-50 shadow-lg">
-      <div className="container mx-auto px-4 py-2 flex items-center justify-between">
+      <div className="container mx-auto px-4  flex items-center justify-between">
         <div className="flex items-center">
-          <img src={nmlogo} alt="Company Logo" className="h-18 md:h-16 mr-4" />
+          <img src={nmlogo} alt="Company Logo" className="h-16 md:h-16 mr-4" />
         </div>
 
         {/* Hamburger Icon */}

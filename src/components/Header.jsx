@@ -22,11 +22,14 @@ export const MenuItem = ({setActive, active, item, children, isMobile}) => {
     >
       <motion.p
         transition={{duration: 0.3}}
-        className="cursor-pointer text-gray-800 hover:text-blue-600 font-medium transition-transform duration-200 hover:scale-110 flex items-center"
+        className="cursor-pointer text-gray-800 hover:text-blue-600 font-medium transition-transform duration-200 hover:scale-105 flex items-center"
       >
         {item}
-        {isMobile && children && (
-          <span className="ml-2">{isActive ? "▼" : "▶"}</span>
+        {/* Arrow for mobile and desktop */}
+        {children && (
+          <span className="ml-2">
+            {isMobile ? (isActive ? "▼" : "▶") : "▼"}
+          </span>
         )}
       </motion.p>
       {(isActive || (!isMobile && active === item)) && (
@@ -62,7 +65,6 @@ export const Menu = ({setActive, children, className = ""}) => (
     {children}
   </nav>
 );
-
 
 export const ProductItem = ({title, href}) => (
   <a href={href} className="flex space-x-2">
@@ -106,33 +108,39 @@ const Header = () => {
     {
       title: "About",
       submenu: [
-        {title: "Our Mission", href: "#"},
+        {title: "About School", href: "#"},
         {title: "Our Vision", href: "#"},
-        {title: "History", href: "#"},
+        {title: "Principal's Desk", href: "#"},
+        {title: "Chairman's Message", href: "#"},
+        {title: "Aims & Objectives", href: "#"},
       ],
     },
     {
       title: "Admission",
       submenu: [
-        {title: "Apply Now", href: "#"},
-        {title: "Eligibility", href: "#"},
-        {title: "Fees Structure", href: "#"},
+        {title: "Procedure/Requirements", href: "#"},
+        {title: "Evaluation System", href: "#"},
+        {title: "Promotion Policy", href: "#"},
+        {title: "Fee Structure", href: "#"},
       ],
     },
     {
       title: "Academics",
       submenu: [
-        {title: "Courses", href: "#"},
-        {title: "Faculty", href: "#"},
-        {title: "Departments", href: "#"},
+        {title: "Sallybus", href: "#"},
+        {title: "HomeWork", href: "#"},
+        {title: "Assignments", href: "#"},
+        {title: "TC", href: "#"},
+        {title: "Circular/Notices", href: "#"},
       ],
     },
     {
       title: "Infrastructure",
       submenu: [
-        {title: "Campus", href: "#"},
-        {title: "Library", href: "#"},
-        {title: "Labs", href: "#"},
+        {title: "School Building", href: "#"},
+        {title: "Digital Classrooms", href: "#"},
+        {title: "Laboratories", href: "#"},
+        {title: "Games & Sports", href: "#"},
       ],
     },
     {title: "Result", href: "#"},
@@ -144,7 +152,7 @@ const Header = () => {
     <nav className="bg-white text-gray-800 sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto px-4 py-2 flex items-center justify-between">
         <div className="flex items-center">
-          <img src={nmlogo} alt="Company Logo" className="h-12 md:h-16 mr-4" />
+          <img src={nmlogo} alt="Company Logo" className="h-18 md:h-16 mr-4" />
         </div>
 
         {/* Hamburger Icon */}

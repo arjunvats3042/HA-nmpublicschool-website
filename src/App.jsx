@@ -88,6 +88,7 @@ import {Routes, Route} from "react-router-dom";
 
 import Header from "./components/Header";
 import AdmissionBanner from "./components/AdmissionBanner";
+import ScrollToTop from "./components/scrollToTop";
 import Footer from "./components/Footer";
 
 // pages
@@ -120,6 +121,7 @@ function App() {
     <>
       <Header />
       <AdmissionBanner />
+      <ScrollToTop />
       <main className="min-h-[calc(100vh-200px)]">
         <Routes>
           <Route path="/" element={<Home />} />

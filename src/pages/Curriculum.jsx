@@ -1,6 +1,6 @@
 import React from "react";
 
-const Curriculam = () => {
+const Curriculum = () => {
   return (
     <div className="bg-[#f9fafe] min-h-screen py-10 px-4 md:px-12 text-[#1F386B]">
       <div className="max-w-6xl mx-auto bg-white shadow-xl rounded-2xl p-8 space-y-8">
@@ -198,4 +198,4 @@ const Curriculam = () => {
   );
 };
 
-export default Curriculam;
+export default Curriculum;

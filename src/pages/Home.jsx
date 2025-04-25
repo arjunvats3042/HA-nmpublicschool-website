@@ -1,6 +1,3 @@
-// import "./App.css";
-// import Footer from "./components/Footer";
-// import Header from "./components/Header";
 import HeroSection from "../components/HeroSection";
 import Mycard from "../components/ui/Mycard";
 import admin from "../assets/admin.png";
@@ -46,66 +43,29 @@ const photos = [
   },
 ];
 
-// function App() {
-//   return (
-//     <>
-//       <Header />
-//       <div>
-//         <ScrollProgress className="top-[65px]" />
-//         <HeroSection />
-//         <div className="bg-[#F3F6FB]">
-//           <h2 className="text-3xl md:text-4xl font-bold text-center pt-8 text-gray-800">
-//             Words That Inspire Us
-//           </h2>
-//           <InfiniteScrollCards />
-//         </div>
-//         <div className="flex flex-wrap justify-center items-start gap-4 mt-10 px-4">
-//           <Mycard imageSrc={admin} buttonLabel="Admin Login" />
-//           <Mycard imageSrc={teacher} buttonLabel="Teacher Login" />
-//           <Mycard imageSrc={form} buttonLabel="Registration Form" />
-//           <Mycard imageSrc={result} buttonLabel="Result" />
-//         </div>
-//         <FacilitiesSection />
-//         <NewsAndEventsSection />
-//         <div className="flex flex-col">
-//           <h1 className="text-3xl md:text-4xl font-bold text-center pt-8 text-gray-800">
-//             Gallery
-//           </h1>
-//           <Gallery testimonials={photos} autoplay={true} />
-//         </div>
-//       </div>
-//       <Footer />
-//     </>
-//   );
-// }
-
-// export default App;
 
 
 export default function Home() {
     return (
       <>
+        <ScrollProgress className="top-[75px]" />
         <HeroSection />
-  
-        <div className="bg-[#F3F6FB] py-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+        <div className="bg-[#F3F6FB] py-12 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1F386B] mb-4">
             Words That Inspire Us
           </h2>
           <InfiniteScrollCards />
         </div>
-  
         <div className="flex flex-wrap justify-center gap-4 mt-10 px-4">
-          <Mycard imageSrc={admin}   buttonLabel="Admin Login" />
+          <Mycard imageSrc={admin} buttonLabel="Admin Login" />
           <Mycard imageSrc={teacher} buttonLabel="Teacher Login" />
-          <Mycard imageSrc={form}    buttonLabel="Registration Form" />
-          <Mycard imageSrc={result}  buttonLabel="Result" />
+          <Mycard imageSrc={form} buttonLabel="Registration Form" />
+          <Mycard imageSrc={result} buttonLabel="Result" />
         </div>
-  
         <FacilitiesSection />
         <NewsAndEventsSection />
-  
-        <div className="py-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+        <div className="py-12 bg-[#F3F6FB] text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1F386B] mb-4">
             Gallery
           </h2>
           <Gallery testimonials={photos} autoplay={true} />

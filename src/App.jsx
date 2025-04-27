@@ -31,6 +31,9 @@ import Examination from "./pages/Examination";
 import Result from "./pages/Result";
 import Contact from "./pages/Contact";
 import Curriculum from "./pages/Curriculum";
+import AdminLogin from "./pages/AdminLogin";
+import TeacherLogin from "./pages/TeacherLogin";
+import RegistrationForm from "./pages/RegistrationForm";
 
 function App() {
   return (
@@ -75,6 +78,9 @@ function App() {
           <Route path="/academics/examination" element={<Examination />} />
           <Route path="/result" element={<Result />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/admin-login" element={<AdminLogin />} />
+          <Route path="/teacher-login" element={<TeacherLogin />} />
+          <Route path="/registration-form" element={<RegistrationForm />} />
         </Routes>
       </main>
 

@@ -43,33 +43,43 @@ const photos = [
   },
 ];
 
-
-
 export default function Home() {
-    return (
-      <>
-        <ScrollProgress className="top-[75px]" />
-        <HeroSection />
-        <div className="bg-[#F3F6FB] py-12 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#1F386B] mb-4">
-            Words That Inspire Us
-          </h2>
-          <InfiniteScrollCards />
-        </div>
-        <div className="flex flex-wrap justify-center gap-4 mt-10 px-4">
-          <Mycard imageSrc={admin} buttonLabel="Admin Login" />
-          <Mycard imageSrc={teacher} buttonLabel="Teacher Login" />
-          <Mycard imageSrc={form} buttonLabel="Registration Form" />
-          <Mycard imageSrc={result} buttonLabel="Result" />
-        </div>
-        <FacilitiesSection />
-        <NewsAndEventsSection />
-        <div className="py-12 bg-[#F3F6FB] text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#1F386B] mb-4">
-            Gallery
-          </h2>
-          <Gallery testimonials={photos} autoplay={true} />
-        </div>
-      </>
-    );
-  }
+  return (
+    <>
+      <ScrollProgress className="top-[75px]" />
+      <HeroSection />
+      <div className="bg-[#F3F6FB] py-12 text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold text-[#1F386B] mb-4">
+          Words That Inspire Us
+        </h2>
+        <InfiniteScrollCards />
+      </div>
+      <div className="flex flex-wrap justify-center gap-4 mt-10 px-4">
+        <Mycard
+          imageSrc={admin}
+          buttonLabel="Admin Login"
+          href="/admin-login"
+        />
+        <Mycard
+          imageSrc={teacher}
+          buttonLabel="Teacher Login"
+          href="/teacher-login"
+        />
+        <Mycard
+          imageSrc={form}
+          buttonLabel="Registration Form"
+          href="/registration-form"
+        />
+        <Mycard imageSrc={result} buttonLabel="Result" href="/result" />
+      </div>
+      <FacilitiesSection />
+      <NewsAndEventsSection />
+      <div className="py-12 bg-[#F3F6FB] text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold text-[#1F386B] mb-4">
+          Gallery
+        </h2>
+        <Gallery testimonials={photos} autoplay={true} />
+      </div>
+    </>
+  );
+}

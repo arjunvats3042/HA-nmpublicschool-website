@@ -14,7 +14,6 @@ const AimsObjectives = () => (
         />
       </div>
 
-      {/* Text Content */}
       <div className="md:w-1/2">
         <h2 className="flex items-center text-3xl sm:text-4xl font-bold text-[#1F386B] mb-4">
           <Target size={28} className="mr-2 text-[#1F386B]" />
